@@ -2,12 +2,9 @@ import Button from './Button';
 import { GoBell, GoCloudDownload, GoDiff, GoDiffAdded } from 'react-icons/go';
 
 function App() {
-    const handleClick = () => {
-        console.log("You just clicked the button!");
-    }
     return <div>
         <div>
-            <Button primary outline rounded onClick={handleClick}>
+            <Button primary outline rounded>
                 <GoBell />
                 Buy Now!
             </Button>
