@@ -4,7 +4,7 @@ import { GoBell, GoCloudDownload, GoDiff, GoDiffAdded } from 'react-icons/go';
 function App() {
     return <div>
         <div>
-            <Button primary outline rounded>
+            <Button primary outline rounded className="mb-5">
                 <GoBell />
                 Buy Now!
             </Button>
