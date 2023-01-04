@@ -1,33 +1,25 @@
-import Button from './components/Button';
-import { GoBell, GoCloudDownload, GoDiff, GoDiffAdded } from 'react-icons/go';
+import Accordion from './components/Accordion';
 
 function App() {
-    return <div>
-        <div>
-            <Button primary outline rounded className="mb-5">
-                <GoBell />
-                Buy Now!
-            </Button>
-        </div>
-        <div>
-            <Button danger outline>
-                <GoCloudDownload />
-                Rent Now!
-            </Button>
-        </div>
-        <div>
-            <Button warning>
-                <GoDiffAdded />
-                See Deal!
-            </Button>
-        </div>
-        <div>
-            <Button secondary outline>Hide Ads!</Button>
-        </div>
-        <div>
-            <Button primary rounded>Click me!</Button>
-        </div>
-    </div>;
+    const items = [
+        {
+            id: 'yeahas',
+            label: 'Is this the third accordion item?',
+            content: 'No it is not, it is the first one.'
+        },
+        {
+            id: 'yeahasasdasd',
+            label: 'Is this winter being too cold?',
+            content: 'Not really, it is really hot.'
+        },
+        {
+            id: 'yeahas12323',
+            label: 'Is it too rainy nowadays?',
+            content: 'It is raining, but not as much as I would wish.'
+        }
+    ];
+    
+    return <Accordion items={items} />;
 }
 
 export default App;
