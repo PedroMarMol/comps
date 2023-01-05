@@ -1,25 +1,13 @@
-import Accordion from './components/Accordion';
+import Dropdown from "./components/Dropdown";
 
 function App() {
-    const items = [
-        {
-            id: 'yeahas',
-            label: 'Is this the third accordion item?',
-            content: 'No it is not, it is the first one.'
-        },
-        {
-            id: 'yeahasasdasd',
-            label: 'Is this winter being too cold?',
-            content: 'Not really, it is really hot.'
-        },
-        {
-            id: 'yeahas12323',
-            label: 'Is it too rainy nowadays?',
-            content: 'It is raining, but not as much as I would wish.'
-        }
+    const options = [
+        { label: 'Red', value: 'red' },
+        { label: 'Green', value: 'green' },
+        { label: 'Blue', value: 'blue' }
     ];
-    
-    return <Accordion items={items} />;
+
+    return <Dropdown options={options} />    
 }
 
 export default App;
