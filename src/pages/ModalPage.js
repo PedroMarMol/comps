@@ -10,7 +10,7 @@ function ModalPage() {
     };
 
     return (
-        <div>
+        <div className="relative">
             <Button onClick={handleClick} primary>Toggle Modal</Button>
             {showModal && <Modal />}
         </div>
