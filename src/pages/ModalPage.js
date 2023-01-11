@@ -3,16 +3,20 @@ import Modal from "../components/Modal";
 import Button from '../components/Button';
 
 function ModalPage() {
-    const [showModal, setUseModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const handleClick = () => {
-        setUseModal(!showModal);
+        setShowModal(!showModal);
+    };
+
+    const handleClose = () => {
+        setShowModal(false);
     };
 
     return (
         <div className="relative">
             <Button onClick={handleClick} primary>Toggle Modal</Button>
-            {showModal && <Modal />}
+            {showModal && <Modal onClose={handleClose} />}
         </div>
     );
 }
