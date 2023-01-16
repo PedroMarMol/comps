@@ -58,7 +58,7 @@ function SortableTable(props) {
         });
     }
 
-    return <Table {...props} data={sortedData} config={updatedConfig} />;
+    return <Table {...props} data={sortedData} config={updatedConfig} />;q
 
 function getIcons(label, sortBy, sortOrder) {
     if (label !== sortBy) {
